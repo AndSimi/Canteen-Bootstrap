@@ -27,20 +27,102 @@
                     <a href="#Breakfast" class="nav-link p-4 lead">Breakfast</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#LunchOrder" class="nav-link p-4 lead">Lunch Order</a>
+                    <a href="#Favourites" class="nav-link p-4 lead">Favourites</a>
+
                 </li>
                 <li class="nav-item">
                     <a href="#Guide" class="nav-link p-4 lead">Quick Guide</a>
                 </li>
-                <li class="nav-item">
-                    <a href="#Favourites" class="nav-link p-4 lead">Favourites</a>
-
+                
+                <li>
+                    <a href="#ShoppingCart" class="position-absolute bottom-0 end-0 p-4">
+                        <i class="bi bi-cart h1"></i>
+                    </a>
                 </li>
             </ul>
 
         </div>
     
     </nav>
+
+    <!--Lunch Order (using FlexBox) -->
+
+    <section class="bg-dark text-light py-2 px-5 text-center text-sm-start">
+        <div class="container">
+            <!-- FlexBox-->
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <!-- FlexBox content-->
+                <div>
+                    <h1>Order your <span class="text-warning">Lunch</span></h1>
+                    <p class="lead my-4">
+                        Don't forget to order your lunch for the next week, before Thursday!
+                    </p>
+                    <button class="btn btn-primary btn-lg my-1" data-bs-toggle="modal" data-bs-target="#Order">Order Now</button>
+                </div>
+                <img class="img-fluid w-50 d-none d-sm-block LunchIcon"  src="image/eating-svgrepo-com.svg" alt="">
+
+            </div>
+        </div>
+
+
+    </section>
+
+
+
+    
+    <!-- Modal -->
+
+    <div class="modal fade" id="Order" tabindex="-1" aria-labelledby="OrderLabel" aria-hidden="true">
+       <div class="modal-dialog">
+         <div class="modal-content">
+
+           <div class="modal-header">
+             <h5 class="modal-title" id="OrderLabel">Modal title</h5>
+             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+           </div>
+
+           <div class="modal-body">
+             
+            <div class="list-group">
+                <label class="list-group-item">
+                    <div class="fw-bold py-2">Monday</div>
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Monday Menu
+                </label>
+                <label class="list-group-item">
+                    <div class="fw-bold py-2">Tuesday</div>
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Tuesday Menu
+                </label>
+                <label class="list-group-item">
+                    <div class="fw-bold py-2">Wednesday</div>
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Wednesday Menu
+                </label>
+                <label class="list-group-item">
+                    <div class="fw-bold py-2">Thursday</div>
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Thursday Menu
+                </label>
+                <label class="list-group-item">
+                    <div class="fw-bold py-2">Friday</div>
+                  <input class="form-check-input me-1" type="checkbox" value="">
+                  Friday Menu
+                </label>
+              </div>
+
+           </div>
+
+           <div class="modal-footer">
+             <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+             <button type="button" class="btn btn-primary">Order</button>
+           </div>
+         </div>
+       </div>
+     </div>
+ 
+
+
 
     <!--Breakfast Menu -->
 
@@ -344,12 +426,12 @@
             </div>
         </div>
     </section>
-
+,
      <!--Footer -->
-    <footer class="p-5 bg-dark text-white text-center position-relative">
+    <footer class="p-4 bg-dark text-white text-center position-relative">
         <div class="container">
             <p class="lead">2021 3rd Semester Project</p>
-            <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <a href="#" class="position-absolute bottom-0 end-0 p-4">
                 <i class="bi bi-arrow-up-circle h1"></i>
             </a>
         </div>
